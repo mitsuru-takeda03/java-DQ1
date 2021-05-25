@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../../static/saveData/css/king.css"
-          th:href="@{/css/saveData/king.css}">
+    <link rel="stylesheet" href="../../static/css/field/king.css"
+          th:href="@{/css/field/king.css}">
 </head>
 <body>
-    <div id="background" style="background-image:url(../../img/DQ1_king.png);"
-    th:style="back-ground-image:url(/img/DQ1_king.png)">
-
+    <div id="background" style="background-image:url(../../static/img/DQ1_king.png);" th:style="@{background-image:url(/img/DQ1_king.png);}">
+        <a id="dialogue" href="index.html" th:href="@{index}" th:text=*{dialogue}>
+            おお　！勇者ロトの血を引くものよ！そなたの来るのを待っておったぞ。
+        </a>
     </div>
 </body>
 </html>

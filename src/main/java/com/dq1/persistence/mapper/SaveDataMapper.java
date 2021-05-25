@@ -30,7 +30,7 @@ public interface SaveDataMapper {
             "j.name AS job_name " +
             "FROM save_data s " +
             "JOIN job j on s.job_id = j.id " +
-            "WHERE id = #{saveDataId}")
+            "WHERE s.id = #{saveDataId}")
     List<SaveData> findId(Integer saveDataId);
 
 

@@ -13,8 +13,8 @@
         <div><a class="choice" href="delete.html" th:href="@{delete}">冒険の書を消す</a></div>
     </div>
     <div class="load-option">
-    <form action="../field/king.htmlz" th:action="@{/field/king}" method="GET" th:each="saveData : ${saveDataList}" th:object="${saveData}">
-        <button class="load-button" name="id" value=0 th:value="*{id}">
+    <form action="../field/king.html" th:action="@{loadComplete}" method="get" th:each="saveData : ${saveDataList}" th:object="${saveData}">
+        <button class="load-button" name="loadId" value=0 th:value="*{id}">
             <span class="mgr-2" th:text="'id: ' + *{id}">id: 111</span>
             <span class="mgr-2" th:text="'名前: ' + *{name}">名前: あああ</span>
             <span class="mgr-2" th:text="'レベル: ' + *{playerLevel}">レベル: 1</span>

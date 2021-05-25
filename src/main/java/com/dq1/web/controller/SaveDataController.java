@@ -29,7 +29,7 @@ public class SaveDataController {
         return "saveData/load";
     }
     @GetMapping("/loadComplete")
-    public String loadComplete(@ModelAttribute("id") Integer loadDataId, Model model){
+    public String loadComplete(@ModelAttribute("loadId") Integer loadDataId, Model model){
         SaveData saveData = saveDataService.findId(loadDataId);
         model.addAttribute("saveData", saveData);
         return "redirect:/field/king";
@@ -56,7 +56,7 @@ public class SaveDataController {
     }
 
     @GetMapping("/deleteComplete")
-    public String deleteComplete(@ModelAttribute("id") Integer deleteDataId, Model model) {
+    public String deleteComplete(@ModelAttribute("deleteId") Integer deleteDataId, Model model) {
         saveDataService.delete(deleteDataId);
         return "redirect:/saveData/index";
     }

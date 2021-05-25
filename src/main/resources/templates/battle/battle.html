@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/field/field.css"
+          th:href="@{/css/field/field.css}">
 </head>
 <body>
-
+    <div id="background" style="background-image:url(../../static/img/DQ1_field.jpeg);" th:style="back-ground-image:url(/img/DQ1_field.png)">
+        <div id="option">
+            <h1 class="choice">メニュー</h1>
+            <div><a class="choice" href="battle.html" th:href="@{battle}">たたかう</a></div>
+            <div><a class="choice" href="field.html" th:href="@{stay}">宿に泊まる</a></div>
+            <div><a class="choice" href="../saveData/index.html" th:href="@{save}">中断</a></div>
+        </div>
+    </div>
 </body>
 </html>

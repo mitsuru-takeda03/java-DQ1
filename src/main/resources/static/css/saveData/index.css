@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+.choice-option{
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.choice{
+    padding-left: 2vw;
+    font-size: 3vw;
+    color: white;
+}
+
+th {
+    background-color: orange;
+}
+
+table, th, td {
+    border: 1px solid;
+}

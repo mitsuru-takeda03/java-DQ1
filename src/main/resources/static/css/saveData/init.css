@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.choice-option{
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.choice{
+    padding:1px;
+    padding-left: 2vw;
+    margin: 0px;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.init-option{
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.input-table{
+    text-align: left;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.init-form{
+    width: 100%;
+    text-align: left;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.command-form{
+    text-align: left;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mgr-2{
+    margin-right: 2vw;
+}

@@ -1,0 +1,10 @@
+INSERT INTO job VALUES(10, '村人');
+INSERT INTO job VALUES(20, '戦士');
+INSERT INTO job VALUES(30, '僧侶');
+INSERT INTO job VALUES(40, '魔法使い');
+INSERT INTO job VALUES(50, '勇者');
+
+INSERT INTO save_data VALUES(101, 'あああ', '1995-01-01', 5, 150, 10);
+INSERT INTO save_data VALUES(102, 'まおー', '2000-01-01', 11, 300, 20);
+INSERT INTO save_data VALUES(103, 'ロト', '2005-01-01', 30, 500, 50);
+INSERT INTO save_data VALUES(104, 'ヨシヒコ', '2010-01-01', 12, 200, 50);

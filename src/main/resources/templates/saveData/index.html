@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../../static/css/saveData/index.css"
+      th:href="@{/css/saveData/index.css}">
+</head>
+<body>
+  <div class="choice-option">
+    <div><a class="choice" href="load.html" th:href="@{load}">冒険をする</a></div>
+    <div><a class="choice" href="init.html" th:href="@{init}">冒険の書をつくる</a></div>
+    <div><a class="choice" href="delete.html" th:href="@{delete}">冒険の書を消す</a></div>
+  </div>
+</body>
+</html>

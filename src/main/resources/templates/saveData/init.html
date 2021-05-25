@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>新規作成</title>
+    <link rel="stylesheet" href="../../static/css/saveData/init.css"
+          th:href="@{/css/saveData/init.css}">
+</head>
+<body>
+    <div class="choice-option">
+        <div><a class="choice" href="load.html" th:href="@{load}">冒険をする</a></div>
+        <div><a class="choice" href="init.html" th:href="@{init}">冒険の書をつくる</a></div>
+        <div><a class="choice" href="delete.html" th:href="@{delete}">冒険の書を消す</a></div>
+    </div>
+    <div class="init-option">
+        <form method="post" action="index.html" th:action="@{initComplete}">
+            <table>
+                <tr>
+                    <th>名前</th>
+                    <td>
+                        <input class="init-form" type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>日付</th>
+                    <td>
+                        <input class="init-form" type="text" name="lastLoginDate">
+                    </td>
+                </tr>
+                <tr>
+                    <th>初期レベル</th>
+                    <td>
+                        <input class="init-form" type="text" name="playerLevel">
+                    </td>
+                </tr>
+            </table>
+            <button class="command-form">はじめる</button>
+        </form>
+</div>
+</body>
+</html>
